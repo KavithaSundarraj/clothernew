@@ -1,0 +1,46 @@
+[  
+   {  
+      "id":"C0",
+      "name":"NEW YEAR, NEW POSSIBILITIES",
+      "imageurl":"file:///Users/dsv/Desktop/Clother/images/sport.jpeg",
+      "itemurl":"file:///Users/dsv/Desktop/Clother/items0.json"
+   },
+   {  
+      "id":"C1",
+      "name":"SOCKS THAT ROCK YOUR STYLE",
+      "imageurl":"file:///Users/dsv/Desktop/Clother/images/sock.jpg",
+      "itemurl":"file:///Users/dsv/Desktop/Clother/items1.json"
+
+   },
+   {  
+      "id":"C2",
+      "name":"WELCOMING THE SPRING",
+      "imageurl":"file:///Users/dsv/Desktop/Clother/images/home.jpeg",
+      "itemurl":"file:///Users/dsv/Desktop/Clother/items2.json"
+   },
+   {  
+      "id":"C3",
+      "name":"WOMEN",
+      "imageurl":"file:///Users/dsv/Desktop/Clother/images/women.jpeg",
+      "itemurl":"file:///Users/dsv/Desktop/Clother/items3.json"
+   },
+   {  
+      "id":"C4",
+      "name":"MEN",
+      "imageurl":"file:///Users/dsv/Desktop/Clother/images/men.jpeg",
+      "itemurl":"file:///Users/dsv/Desktop/Clother/items4.json"
+   },
+   {  
+      "id":"C5",
+      "name":"KIDS",
+      "imageurl":"file:///Users/dsv/Desktop/Clother/images/kids.jpeg",
+      "itemurl":"file:///Users/dsv/Desktop/Clother/items1.json"
+   },
+   {  
+      "id":"c6",
+      "name":"HOME",
+      "imageurl":"file:///Users/dsv/Desktop/Clother/images/home.jpeg",
+      "itemurl":"file:///Users/dsv/Desktop/Clother/items1.json"
+   }
+]
+

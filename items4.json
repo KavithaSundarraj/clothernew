@@ -1,0 +1,73 @@
+[  
+   {  
+      "itemId":"i1",
+      "itemUrl":"file:///Users/dsv/Desktop/Clother/images/Picture1.png",
+      "itemDetailImagesUrl":[  
+                ]
+      
+   },
+   {  
+      "itemId":"i2",
+      "itemUrl":"file:///Users/dsv/Desktop/Clother/images/Picture2.png",
+      "itemDetailImagesUrl":[  
+         
+      ]
+      
+   },
+   {  
+      "itemId":"i3",
+      "itemUrl":"file:///Users/dsv/Desktop/Clother/images/Picture3.png",
+      "itemDetailImagesUrl":[  
+        
+      ]
+   },
+   {  
+      "itemId":"i4",
+      "itemUrl":"file:///Users/dsv/Desktop/Clother/images/Picture4.png",
+      "itemDetailImagesUrl":[  
+               ]
+   },
+   {  
+      "itemId":"i5",
+      "itemUrl":"file:///Users/dsv/Desktop/Clother/images/Picture5.png",
+      "itemDetailImagesUrl":[  
+        
+      ]
+   },
+
+{  
+      "itemId":"i6",
+      "itemUrl":"file:///Users/dsv/Desktop/Clother/images/Picture6.png",
+      "itemDetailImagesUrl":[  
+                ]
+      
+   },
+   {  
+      "itemId":"i7",
+      "itemUrl":"file:///Users/dsv/Desktop/Clother/images/Picture7.png",
+      "itemDetailImagesUrl":[  
+         
+      ]
+      
+   },
+   {  
+      "itemId":"i8",
+      "itemUrl":"file:///Users/dsv/Desktop/Clother/images/Picture8.png",
+      "itemDetailImagesUrl":[  
+        
+      ]
+   },
+   {  
+      "itemId":"i9",
+      "itemUrl":"file:///Users/dsv/Desktop/Clother/images/Picture9.png",
+      "itemDetailImagesUrl":[  
+               ]
+   },
+   {  
+      "itemId":"i10",
+      "itemUrl":"file:///Users/dsv/Desktop/Clother/images/Picture10.png",
+      "itemDetailImagesUrl":[  
+        
+      ]
+   }
+]
