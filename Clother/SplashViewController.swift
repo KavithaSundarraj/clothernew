@@ -45,7 +45,8 @@ class SplashViewController: UIViewController, UIGestureRecognizerDelegate
     func configurePageControl() {
         // The total number of pages that are available is based on how many available colors we have.
         //pageControl = UIPageControl(frame: CGRect(x: frame.size.width - (frame.size.width + 20), y: frame.size.height - (frame.size.height + 20), width: 100, height: 100))
-        pageControl = UIPageControl(frame: CGRect(x: 0,y: UIScreen.main.bounds.maxY - 260,width: UIScreen.main.bounds.width,height: 50))
+       // pageControl = UIPageControl(frame: CGRect(x: 0,y: UIScreen.main.bounds.maxY - 260,width: UIScreen.main.bounds.width,height: 50))
+        pageControl = UIPageControl(frame: CGRect(x: 0,y: UIScreen.main.bounds.maxY - ( (UIScreen.main.bounds.maxY / 2) - 90),width: UIScreen.main.bounds.width,height: 50))
         pageControl.transform = CGAffineTransform(scaleX: 2, y: 2)
         self.pageControl.numberOfPages = arrPagePhoto.count
         self.pageControl.currentPage = 0
