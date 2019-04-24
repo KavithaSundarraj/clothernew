@@ -41,8 +41,8 @@ class CreateViewController: UIViewController, UITextFieldDelegate {
         else {
             Auth.auth().createUser(withEmail: EmailTextField.text!, password: PasswordTextField.text!, completion: { (user: User?, error) in
             if error == nil {
-                print("success")
-                print(User.self)
+                //print("success")
+               // print(User.self)
                 self.performSegue(withIdentifier: "createSegue", sender: self)
             }
             else{

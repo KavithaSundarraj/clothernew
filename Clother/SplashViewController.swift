@@ -71,9 +71,9 @@ class SplashViewController: UIViewController, UIGestureRecognizerDelegate
                 self.splashImages.image = UIImage(named: arrPagePhoto[index])
                // setupView(at: arrPagePhoto[index])
             
-                    print("swipe left")
-                    print("image at index",arrPagePhoto[index])
-                    print("page",pageControl.currentPage )
+                   // print("swipe left")
+                   // print("image at index",arrPagePhoto[index])
+                    //print("page",pageControl.currentPage )
             
             // to set label
             if(pageControl.currentPage==0)
@@ -99,9 +99,9 @@ class SplashViewController: UIViewController, UIGestureRecognizerDelegate
                 //setupView(at: arrPagePhoto[index])
                 
                 pageControl.currentPage = index
-            print("swipe right")
-            print(arrPagePhoto[index])
-                print("page",pageControl.currentPage )
+           // print("swipe right")
+            //print(arrPagePhoto[index])
+                //print("page",pageControl.currentPage )
             //to set label
             if(pageControl.currentPage==0)
             {

@@ -200,8 +200,9 @@ class CollectionsViewController:  UIViewController, UIApplicationDelegate {
         }
         //once shown all items for survey - moves to Finish page
        if(currentIndex==cItems.count)
-        {
-            performSegue(withIdentifier: "showEndPage", sender: self)
+        {//print("segue performed")
+            self.performSegue(withIdentifier: "showEndPage", sender: self)
+        
         }
         
         //print(currentIndex)
