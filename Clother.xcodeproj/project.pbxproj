@@ -48,6 +48,7 @@
 		155A7AD820849000000597F4 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		155A7ADC2084C10C000597F4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		155D89202091BAF800FE545D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		15637EF5227067D700624444 /* Clother.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clother.entitlements; sourceTree = "<group>"; };
 		1563A05F20B562A4001440F6 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		156844B8208881310063BDBF /* Collections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collections.swift; sourceTree = "<group>"; };
 		156844BA208882760063BDBF /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 		155A7AC5208485D2000597F4 /* Clother */ = {
 			isa = PBXGroup;
 			children = (
+				15637EF5227067D700624444 /* Clother.entitlements */,
 				15A6AC1420E7C5EC001C82A1 /* InfoViewController.swift */,
 				1563A05F20B562A4001440F6 /* FinalViewController.swift */,
 				15AB70B420CA98FC0007DA2F /* AboutViewController.swift */,
@@ -177,6 +179,14 @@
 					155A7AC2208485D1000597F4 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};

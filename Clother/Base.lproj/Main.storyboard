@@ -183,6 +183,7 @@
                                 <state key="normal" title="Button" image="login-1"/>
                                 <connections>
                                     <action selector="signIn:" destination="L2U-EF-m2M" eventType="touchUpInside" id="oth-P6-2ah"/>
+                                    <segue destination="Baa-4I-ZSa" kind="show" identifier="goToMenuPage" id="k5b-Cl-5pr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -210,7 +211,6 @@
                     <connections>
                         <outlet property="emailTextFieldName" destination="ney-Yc-KG3" id="UKz-Vm-pgW"/>
                         <outlet property="passwordTextField" destination="URf-eO-tdn" id="vlC-L5-9h3"/>
-                        <segue destination="BE6-SO-hN4" kind="show" identifier="goToMenuPage" id="qLH-Po-zqK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFD-BZ-nge" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -859,7 +859,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOj-br-Bez">
-                                <rect key="frame" x="31.999999999999996" y="24" width="47.333333333333329" height="43"/>
+                                <rect key="frame" x="31.999999999999996" y="24" width="47.666666666666657" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="47.5" id="DkU-GD-8RT"/>
                                     <constraint firstAttribute="height" constant="43" id="E95-Ib-qvE"/>
@@ -871,7 +871,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkl-yg-yQw">
-                                <rect key="frame" x="15.999999999999993" y="64" width="82.333333333333314" height="25"/>
+                                <rect key="frame" x="16" y="64" width="82.666666666666671" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="S0W-rI-GaO"/>
                                 </constraints>
@@ -880,7 +880,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnz-Sn-VhP">
-                                <rect key="frame" x="266" y="63" width="79" height="25"/>
+                                <rect key="frame" x="266" y="63" width="132" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="knN-dL-znb"/>
                                 </constraints>
@@ -889,7 +889,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y89-Qp-bMn">
-                                <rect key="frame" x="280" y="24" width="52" height="43"/>
+                                <rect key="frame" x="280" y="24" width="105" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="KJ5-sH-XuE"/>
                                 </constraints>
@@ -1571,7 +1571,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="RJi-b2-lIL"/>
         <segue reference="lEv-cg-2QN"/>
-        <segue reference="RQH-sy-zGw"/>
+        <segue reference="k5b-Cl-5pr"/>
         <segue reference="ZHU-WV-NNk"/>
         <segue reference="sCc-K0-PuD"/>
     </inferredMetricsTieBreakers>
