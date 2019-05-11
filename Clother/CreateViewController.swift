@@ -38,7 +38,9 @@ class CreateViewController: UIViewController, UITextFieldDelegate {
             present(alertController, animated: true, completion: nil)
             
         }
-        else {
+        
+            if Connectivity.isConnectedToInternet() {
+               // print("Yes! internet is available.")
             Auth.auth().createUser(withEmail: EmailTextField.text!, password: PasswordTextField.text!, completion: { (user: User?, error) in
             if error == nil {
                 //print("success")
@@ -52,11 +54,21 @@ class CreateViewController: UIViewController, UITextFieldDelegate {
                 alertController.addAction(defaultAction)
                 self.present(alertController, animated: true, completion: nil)
                 //To reset textfields
-                self.EmailTextField.text=""
-                self.PasswordTextField.text=""
+                //self.EmailTextField.text=""
+                //self.PasswordTextField.text=""
                 }
                 })
                }
+            else{
+                //print("Yes! internet is not available.")
+                //To perform alert message based on error
+                let alertController = UIAlertController(title: "Error", message: "No internet connection", preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+               
+        }
+        
     }
     
     //Hide Keyboard when user touches outside

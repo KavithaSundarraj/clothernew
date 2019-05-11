@@ -29,7 +29,18 @@ class SplashViewController: UIViewController, UIGestureRecognizerDelegate
         self.performSegue(withIdentifier: "create", sender: self)
     }
     @IBAction func guest(_ sender: UIButton) {
+        if Connectivity.isConnectedToInternet() {
+            // print("Yes! internet is available.")
         self.performSegue(withIdentifier: "guest", sender: self)
+        }
+        else{
+            // print("Yes! internet is not available.")
+            //To perform alert message based on error
+            let alertController = UIAlertController(title: "Error", message: "No internet connection", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
 
     

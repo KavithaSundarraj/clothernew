@@ -30,7 +30,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     */
     //a list to store collections
     var collectionlists = [Collections]()
-   
+    
     //To perform segue for loading ItemViewController
     let itemSegueIdentifier = "ShowItemSegue"
     let textCellIdentifier = "TextCell"
@@ -41,13 +41,15 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
             let destination = segue.destination as? CollectionsViewController,
             let blogIndex = tableView.indexPathForSelectedRow?.row
         {
+            print(collectionlists[blogIndex].id!)
+            print("items")
+            print(collectionlists [blogIndex].itemurl!)
             destination.collectionsId = collectionlists [blogIndex].id!
             destination.itemsurl = collectionlists [blogIndex].itemurl!
-            //print(collectionlists[blogIndex].id!)
-            //print("items")
-          //print(collectionlists [blogIndex].itemurl!)
+        
         }
     }
+    
     
     // MARK: - UITextFieldDelegate Methods
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -68,7 +70,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
         
         let row = indexPath.row
-        print(collectionlists[row].id!)
+        print("xxx",collectionlists[row].id!)
     }
     
     //the method returning size of the list
@@ -110,6 +112,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("col",collectionlists)
         //To check - user or guest
         if FirebaseApp.app() == nil {
             FirebaseApp.configure()

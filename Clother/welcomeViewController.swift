@@ -68,12 +68,13 @@ class welcomeViewController: UIViewController {
                         imageUrl: (collectionArray[i] as AnyObject).value(forKey: "imageurl") as? String,
                         itemurl: (collectionArray[i] as AnyObject).value(forKey: "itemurl") as? String
                     ))
+                    print(i,collectionArray[i])
                 }
                 
             }
         }
       
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4, execute: {
             self.performSegue(withIdentifier: "welcomeSeguetoMenu", sender: self)
             
        })

@@ -183,7 +183,6 @@
                                 <state key="normal" title="Button" image="login-1"/>
                                 <connections>
                                     <action selector="signIn:" destination="L2U-EF-m2M" eventType="touchUpInside" id="oth-P6-2ah"/>
-                                    <segue destination="Baa-4I-ZSa" kind="show" identifier="goToMenuPage" id="k5b-Cl-5pr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -211,6 +210,7 @@
                     <connections>
                         <outlet property="emailTextFieldName" destination="ney-Yc-KG3" id="UKz-Vm-pgW"/>
                         <outlet property="passwordTextField" destination="URf-eO-tdn" id="vlC-L5-9h3"/>
+                        <segue destination="Baa-4I-ZSa" kind="show" identifier="goToMenuPage" id="9Gz-n4-xYN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFD-BZ-nge" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1570,8 +1570,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="RJi-b2-lIL"/>
-        <segue reference="lEv-cg-2QN"/>
-        <segue reference="k5b-Cl-5pr"/>
+        <segue reference="8d0-57-wyj"/>
+        <segue reference="9Gz-n4-xYN"/>
         <segue reference="ZHU-WV-NNk"/>
         <segue reference="sCc-K0-PuD"/>
     </inferredMetricsTieBreakers>

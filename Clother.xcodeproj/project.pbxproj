@@ -30,6 +30,7 @@
 		15B8FC84221D2ED900088589 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B8FC83221D2ED900088589 /* PageContentViewController.swift */; };
 		15B8FC862223C35A00088589 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B8FC852223C35A00088589 /* SplashViewController.swift */; };
 		15C59892209204EE008384DE /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C59891209204EE008384DE /* AccountViewController.swift */; };
+		15F020B9228727DA0042F129 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F020B8228727D90042F129 /* Connectivity.swift */; };
 		CBC743445F744927B0846D3E /* Pods_Clother.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB282968733CBCE6D43AF670 /* Pods_Clother.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		15B8FC83221D2ED900088589 /* PageContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		15B8FC852223C35A00088589 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		15C59891209204EE008384DE /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		15F020B8228727D90042F129 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		8B4E3DBEBB554EF1C37B5559 /* Pods-Clother.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clother.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clother/Pods-Clother.debug.xcconfig"; sourceTree = "<group>"; };
 		B814C6B1623F659A26C770C5 /* Pods-Clother.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clother.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clother/Pods-Clother.release.xcconfig"; sourceTree = "<group>"; };
 		EB282968733CBCE6D43AF670 /* Pods_Clother.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clother.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +119,7 @@
 				156844BC208883FE0063BDBF /* MenuViewControllerTableViewCell.swift */,
 				156844BA208882760063BDBF /* MenuViewController.swift */,
 				155A7ADC2084C10C000597F4 /* LoginViewController.swift */,
+				15F020B8228727D90042F129 /* Connectivity.swift */,
 				155A7AD820849000000597F4 /* CreateViewController.swift */,
 				155A7ACD208485D2000597F4 /* Assets.xcassets */,
 				155A7ACF208485D2000597F4 /* LaunchScreen.storyboard */,
@@ -290,6 +293,7 @@
 				15C59892209204EE008384DE /* AccountViewController.swift in Sources */,
 				156844B9208881310063BDBF /* Collections.swift in Sources */,
 				15AB70B520CA98FC0007DA2F /* AboutViewController.swift in Sources */,
+				15F020B9228727DA0042F129 /* Connectivity.swift in Sources */,
 				1538260C20AC533E0040ECFC /* TinderCard.swift in Sources */,
 				152E66BC20B6B7FA005FEC49 /* items.swift in Sources */,
 				15B8FC84221D2ED900088589 /* PageContentViewController.swift in Sources */,

@@ -19,6 +19,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction func signIn(_ sender: UIButton) {
         let email = emailTextFieldName.text
         let password = passwordTextField.text
+        if emailTextFieldName.text == "" {
+            let alertController = UIAlertController(title: "Error", message: "Please enter your email and password", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            present(alertController, animated: true, completion: nil)
+            
+        }
+        if Connectivity.isConnectedToInternet() {
+           // print("Yes! internet is available.")
+            // do some tasks..
+       
         Auth.auth().signIn(withEmail: email!, password: password!, completion: { (user: User?, error) in
             if error == nil {
                 self.performSegue(withIdentifier: "goToMenuPage", sender: self)
@@ -29,10 +40,19 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 alertController.addAction(defaultAction)
                 self.present(alertController, animated: true, completion: nil)
                 //To reset the textfields to empty
-                self.emailTextFieldName.text = ""
-                self.passwordTextField.text = ""
+                //self.emailTextFieldName.text = ""
+                //self.passwordTextField.text = ""
             }
         })
+         }
+        else{
+           // print("Yes! internet is not available.")
+            //To perform alert message based on error
+            let alertController = UIAlertController(title: "Error", message: "No internet connection", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
     
     //Back Button - to connect to Main page
@@ -53,6 +73,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+  
         //initialising firebase
         if FirebaseApp.app() == nil {
             FirebaseApp.configure()
